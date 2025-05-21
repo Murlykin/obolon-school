@@ -1,0 +1,257 @@
+#header {
+    z-index: 999;
+}
+.footer {
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+:root {
+    --oi-max-width-content: 800px;
+    --oi-max-width-video: 1080px;
+    --oi-max-width-img: 1080px;
+}
+
+.oi-rg {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.oi-rg p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.oi-rg__section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.oi-rg__section-container {
+    width: 90%;
+    max-width: var(--oi-max-width-content);
+    margin: 0 auto;
+    padding: 9rem 0;
+}
+
+.oi-intro {
+    position: relative;
+    background-color: black;
+}
+
+.oi-intro h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -2px;
+    font-size: 7vw;
+    line-height: 1;
+    color: white;
+    margin: 0;
+}
+.oi-intro h1 span {
+    letter-spacing: -2rem;
+}
+.oi-intro img {
+    opacity: 0.85;
+}
+
+.oi-dek {
+    background: url("/image/RolandGarros_texture_3200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.oi-dek h2,
+.oi-dek p {
+    color: white;
+}
+.oi-dek h2 {
+    font-size: clamp(2.5rem, 2.3611rem + 0.6944vw, 3.75rem);
+    line-height: 1.4;
+    margin-top: 0;
+}
+.oi-dek p {
+    font-size: 1.5rem;
+}
+
+.oi-dek .oi-rg__section-container {
+    z-index: 200;
+}
+
+.oi-dek__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.ball1,
+.ball2,
+.shadow1,
+.shadow2,
+.ball3,
+.shadow3 {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    left: -150px;
+    z-index: 100;
+}
+
+.oi-parallax {
+    background: url("./image/RolandGarros_parallax_32002.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+}
+
+.oi-rg__imageContainer-screensImage {
+    position: relative;
+    display: flex;
+    width: 80%;
+}
+
+.oi-rg__imageContainer-screensImage img {
+    align-self: end;
+    z-index: 200;
+}
+
+#tablets {
+    position: absolute;
+  
+    width: 20%;
+    transform: translateX(-170%);
+}
+#computer {
+    width: 80%;
+    margin: auto;
+    z-index: 100;
+}
+#laptop {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    transform: translateX(190%);
+}
+
+.last-container {
+    padding-bottom: 60%;
+}
+
+.oi-rg__imageContainer-footerImage {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1700px) {
+    .oi-intro h1 span {
+        letter-spacing: -1rem;
+    }
+}
+@media only screen and (max-width: 965px) {
+    .oi-intro h1 span {
+        letter-spacing: -0.7rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .mobile {
+        display: initial;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .oi-rg__section-container {
+        width: 80%;
+        padding: 5rem 0;
+    }
+
+    .oi-intro h1 {
+        top: 22%;
+        left: 10%;
+        font-size: 13vw;
+    }
+    .oi-intro h1 span {
+        letter-spacing: -0.5rem;
+    }
+    .oi-intro img {
+        opacity: 0.75;
+    }
+
+    .ball1,
+    .ball2,
+    .shadow1,
+    .shadow2,
+    .ball3,
+    .shadow3 {
+        width: 75px;
+        height: auto;
+        position: absolute;
+        left: -100px;
+    }
+
+    .oi-rg__imageContainer-screensImage {
+        width: 100%;
+    }
+    #tablets {
+        width: 25%;
+        left: -15%;
+    }
+    #computer {
+        width: 90%;
+    }
+    #laptop {
+        right: -15%;
+        width: 25%;
+    }
+
+    .oi-parallax {
+        background-attachment: scroll;
+        height: 50vh;
+    }
+
+    .last-container {
+        padding-bottom: 55%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .oi-dek p {
+        font-size: 1.3rem;
+    }
+}
