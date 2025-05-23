@@ -84,7 +84,7 @@ img {
 }
 
 .oi-dek {
-    background: url("/image/field.jpg");
+    background: url("./image/field.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 0;
