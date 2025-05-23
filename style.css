@@ -84,11 +84,11 @@ img {
 }
 
 .oi-dek {
-    background: url("/image/RolandGarros_texture_32001.jpg");
+    background: url("/image/field.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 0;
-    
+
 }
 
 .oi-dek h2,
